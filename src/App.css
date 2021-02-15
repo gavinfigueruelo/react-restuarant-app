@@ -1,0 +1,142 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+#outerBody{
+  height: 1200px;
+  background-color: lightgray;
+background-size: 1200px;
+background-repeat: no-repeat;
+}
+.App {
+  text-align: center;
+}
+.container{
+  width: 100vw;
+  text-align: center;
+  height: 800px;
+  box-shadow: 10px 10px 10px darkgray;
+}
+li {
+  list-style: none;
+}
+.menuItem{
+  margin-top: 20px;
+  padding: 10px 0 10px 10px;
+  line-height: normal;
+  text-align: left;
+  animation: slide-left 1.5s;
+}
+.menuItem.card{
+  box-shadow: 5px 5px 5px darkgray;
+  border-left: 2px solid darkred;
+  border-top: 2px solid darkred;
+  background-color: transparent;
+
+}
+.menuItem button {
+  box-shadow: 3px 3px 3px darkgray;
+  background-color: green;
+  width: 20%;
+}
+
+
+#topNav{
+  box-shadow: 5px 5px 5px darkgray;
+  display: flex;
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+  font-family: Tahoma, Helvetica, sans-serif;
+  background-image: linear-gradient(to left, green, white);
+}
+#topNav p{
+  padding: 10px 10px 0 10px;
+  font-size: 30px;
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#orderCol{
+  border: 2px solid darkred;
+  text-align: left;
+  box-shadow: 5px 5px 5px darkgray;
+  height: 600px;
+  background-color: #FFFAF0;
+  margin-top: 150px;
+  border-radius: 5px;
+  animation: drop-in 1.5s;
+  background-image: linear-gradient(white, green);
+}
+
+.orderItem{
+  background-color: #FFFAF0;
+  line-height: normal;
+}
+.orderItem p{
+  margin: 2px;
+}
+.orderItem.card{
+  background-color: grey;
+  border: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 110px;
+  margin-bottom: 5px;
+}
+
+.orderItem button {
+  margin: 2px;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+#orderList h5{
+  margin: 10px 5px 10px 5px;
+  border-bottom: 2px solid black;
+
+}
+
+#orderTotal{
+  transform:translateX(85px);
+  position: absolute;
+  bottom: 40px;
+  font-size: x-large;
+  font-weight: bold;
+
+}
+#nameButton1{
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
